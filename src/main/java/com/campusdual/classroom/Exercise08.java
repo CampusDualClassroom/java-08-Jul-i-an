@@ -1,9 +1,11 @@
 package com.campusdual.classroom;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class Exercise08 {
 
     public static void main(String[] args) {
-
+        whileLoop(15);
     }
 
     //TODO ↓
@@ -12,6 +14,11 @@ public class Exercise08 {
     // X+1 < Y. El próximo ciclo valdrá: X+2
     // etc.
     public static void whileLoop(int num) {
+        int x = 0;
+        while (x < num){
+            System.out.println(x + " < " + num + ". El proximo ciclo valdra: " +  (x + 1));
+            x++;
+        }
 
     }
 }
